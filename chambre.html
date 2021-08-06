@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chambre</title>
+    <!--meta tag to make website work on cross-devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the bootstrap link if you want default styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add the google-fonts link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add the archivo google-fonts link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Add the Robotto google-fonts link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Add the Old Standard TT google-fonts link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Add the swiper.css if you want default styling -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Add font-awesome if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ADD the Animation if you want default styling
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style-2.css">
+</head>
+
+<body>
+
+    <!-- //===========================Header Start=================================// -->
+    <header id="header">
+
+        <nav class="nav-design navbar navbar-expand-xl ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="header-logo hide-logo" src="images/logo.png" alt="missing"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+                <div class="navbar-collapse collapse" id="navbarNavDropdown" data-toggle="collapse">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item item-contact">
+                            <a class="nav-link link-contact" href="#">CONTACT@MAIL.ORG
+                +33 4 94 95 96 97 98 99</a>
+                        </li>
+                        <li class="nav-item item-tel">
+                            <a class="nav-link link-tel   nav-space" href="#">L'H&#212;TEL</a>
+                        </li>
+                        <li class="nav-item item-chamb">
+                            <a class="nav-link link-chamb   nav-space" href="chambre.html">CHAMBRES</a>
+                        </li>
+                        <li class="nav-item item-rest">
+                            <a class="nav-link link-rest  nav-space" href="Restauration.html">RESTAURATIONS</a>
+                        </li>
+                        <li class="nav-item item-img">
+                            <a class="nav-link link-img " href="index.html"><img class="header-logo show-logo" src="images/logo.png" alt="missing"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-space dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                &#201;V&#200;NEMENTS</a>
+
+                            <!-- your mega menu starts here! -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+
+                                <!-- the standard dropdown items -->
+                                <a class="dropdown-item item-head" href="#">What we do</a>
+                                <a class="dropdown-item item-head" href="#">How we fit your needs</a>
+
+                                <!-- next, a divider to tidy things up -->
+                                <div class="dropdown-divider"></div>
+
+                                <!-- finally, using flex to create your layout -->
+                                <div class="mega-menu align-items-start justify-content-start">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Development</div>
+                                            <a class="dropdown-item" href="#">Bespoke software</a>
+                                            <a class="dropdown-item" href="#">Mobile apps</a>
+                                            <a class="dropdown-item" href="#">Websites</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Professional Services</div>
+                                            <a class="dropdown-item" href="#">Project rescue</a>
+                                            <a class="dropdown-item" href="#">Source code recovery</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Fixed Price Services</div>
+                                            <a class="dropdown-item" href="#">Add cookie consent</a>
+                                            <a class="dropdown-item" href="#">Add captcha</a>
+                                            <a class="dropdown-item" href="#">Add core data</a>
+                                            <a class="dropdown-item" href="#">Custom error pages</a>
+                                            <a class="dropdown-item" href="#">Contact form creation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item item-fam">
+                            <a class="nav-link link fam  nav-space" href="#">EN FAMILLE</a>
+                        </li>
+                        <li class="nav-item item-cont">
+                            <a class="nav-link link-cont  nav-space" href="#">ACC&#201;S & CONTACT</a>
+                        </li>
+                        <li class="nav-item item-prof">
+                            <a class="nav-link link-prof  nav-space" href="#">PROFESSIONNELS</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+        </nav>
+
+        <div class="banner">
+            <div class="bg-images">
+                <img class="right-1 bg-display bg-right-1" src="images/votre/right-1.png" alt="missing">
+            </div>
+            <div class="Chambre-card">
+                <div class="chambre-head">
+                    <p class="chambre-head-item">Nos Photos</p>
+                    <p class="chambre-head-item">Commodités</p>
+                    <p class="chambre-head-item">Bonus</p>
+                    <p class="chambre-head-item">Site Web</p>
+                </div>
+                <div class="chambre-body">
+                    <div class="chambre-info">
+                        <div class="chambre-desc">
+                            <h3 class="chambre-text">NOS <span class="txt-dark-gold"> CHAMBRE</span> </h3>
+                            <h3 class="chambre-detail">Suite Familiale / Executive</h3>
+                        </div>
+                        <h3 class="chambre-text chambre-num">300€<span class="chambre-span">/Nuit</span></h3>
+                    </div>
+                    <div class="chambre-info2">
+                        <div class="chambre-item">
+                            <h4 class="chambre-type">Arrivée</h4>
+                            <h3 class="chambre-display">
+                                <p class="chambre-date">Fri, 14th June 2020 </p>
+                                <p class="chambre-cal">calendar-alt</p>
+                            </h3>
+                        </div>
+
+                        <div class="chambre-item">
+                            <h4 class="chambre-type">Départ</h4>
+                            <h3 class="chambre-display">
+                                <p class="chambre-date">Sun, 16th June 2020</p>
+                                <p class="chambre-cal">calendar-alt</p>
+                            </h3>
+                        </div>
+
+                        <div class="chambre-item">
+                            <h4 class="chambre-type">Occupants</h4>
+                            <h3 class="chambre-display">
+                                <p class="chambre-date">10 Guest</p>
+                                <p class="chambre-cal">users</p>
+                            </h3>
+                        </div>
+
+                        <div class="chambre-item">
+                            <h3 class="chambre-reserve">R&Eacute;SERVEZ</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- //===========================Header End=================================// -->
+    </header>
+    <!-- //===========================Gallery-Start=================================// -->
+    <section id="gallery">
+        <div class="bg-images">
+            <img class="left-1 bg-display" src="images/votre/left-1.png" alt="missing">
+
+            <img class="left-2 bg-display " src="images/votre/left-2.png" alt="missing">
+
+            <img class="right-1 bg-display" src="images/votre/right-1.png" alt="missing">
+
+            <img class="right-2 bg-display " src="images/votre/right-2.png" alt="missing">
+        </div>
+        <div class="container">
+            <div class="page-intro">
+                <h4 class="headline">CHAMBRE DE R&Ecirc;VE<span class="txt-dark-gold"> &Agrave; L'ESPRIT
+            M&Eacute;DITERANN&Eacute;EN</span></h4>
+                <h3 class="headline-1">Une suite pour profiter en famille à quelques pas de la plage.</h3>
+            </div>
+            <div class="gallery-info">
+
+                <div class="swiper-container swiper-gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-1.png" />
+                        </div>
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-2.webp" />
+                        </div>
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-3.webp" />
+                        </div>
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-4.jpg" />
+                        </div>
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-5.jpg" />
+                        </div>
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-6.jpg" />
+                        </div>
+                        <div class="swiper-slide display-slide">
+                            <img class="swiper-display" src="images/gallery/display-1.png" />
+                        </div>
+
+                    </div>
+
+                </div>
+                <div thumbsSlider="" class="swiper-container swiper-gallery1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-1.png" />
+                        </div>
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-2.png" />
+                        </div>
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-3.png" />
+                        </div>
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-4.png" />
+                        </div>
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-5.png" />
+                        </div>
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-6.png" />
+                        </div>
+                        <div class="swiper-slide image-slide">
+                            <img class="swiper-image" src="images/gallery/img-1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //===========================Gallery-End=================================// -->
+        </div>
+    </section>
+
+    <!-- //===========================Services-Start=================================// -->
+    <section id="services">
+        <div class="bg-images">
+            <img class="right-2-top bg-display " src="images/votre/right-2.png" alt="missing">
+
+            <img class="left-1 bg-display" src="images/votre/left-1.png" alt="missing">
+
+            <img class="left-2 bg-display " src="images/votre/left-2.png" alt="missing">
+
+            <img class="right-1 bg-display" src="images/votre/right-1.png" alt="missing">
+
+            <img class="right-2 bg-display " src="images/votre/right-2.png" alt="missing">
+        </div>
+        <div class="container">
+            <div class="services-section">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="services-box">
+                            <h4 class="headline">CHAMBRE DE R&Ecirc;VE<span class="txt-dark-gold"> &Agrave; L'ESPRIT
+                  M&Eacute;DITERANN&Eacute;EN</span></h4>
+                            <h3 class="headline-1">Le calme et le luxe d'une Suite avec vue mer</h3>
+                            <p class="services-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                                perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                                ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="services-box1">
+                            <div class="services-box1-info">
+                                <h4 class="headline">R&Egrave;GLEMENT DE<span class="txt-dark-gold"> LA CHAMBRE</span></h4>
+                                <p class="box1-para">Interdiction de fumer</p>
+                                <p class="box1-para">Check-in à partir de 14 Heure</p>
+                                <p class="box1-para">Check-out avant 11H</p>
+                                <p class="box1-para">Animaux muselés</p>
+                                <p class="box1-para">Parking Privé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services-section1">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="services-box2">
+                            <h4 class="headline">CARACT&Eacute;RISTIQUES DE <span class="txt-dark-gold">LA CHAMBRE</span></h4>
+                            <div class="services-box2-info">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="box1-para">bath<span class="txt-white"> Air conditioner</span></p>
+                                        <p class="box1-para">cut<span class="txt-white">Breakfast</span></p>
+                                        <p class="box1-para"><i class="fa fa-square-o square-design" aria-hidden="true"></i><span class="txt-white">Cleaning</span></p>
+                                        <p class="box1-para">flower<span class="txt-white">Grocery</span></p>
+                                        <p class="box1-para">shopping-cart<span class="txt-white">shop-near</span></p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="box1-para">wifi<span class="txt-white"> High speed WiFi</span></p>
+                                        <p class="box1-para"><i class="fa fa-square-o square-design" aria-hidden="true"></i><span class="txt-white">Kitchen</span></p>
+                                        <p class="box1-para"><i class="fa fa-square-o square-design" aria-hidden="true"></i><span class="txt-white">Shower</span></p>
+                                        <p class="box1-para">bed<span class="txt-white">Single bed</span></p>
+                                        <p class="box1-para">bus<span class="txt-white">Towels</span></p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="box1-para">key<span class="txt-white">Strong Locker</span></p>
+                                        <p class="box1-para">lock<span class="txt-white">Smart Security</span></p>
+                                        <p class="box1-para">headphones-alt<span class="txt-white">24/7 Online Support</span></p>
+                                        <p class="box1-para">users<span class="txt-white">Expert Team</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="services-box3">
+                            <div class="services-box3-info">
+                                <h4 class="headline">CONDITIONS <span class="txt-dark-gold"> D'ANNULATION</span></h4>
+                                <p class="box3-para">Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor.
+                                    <span class="txt-black"> Cancel up </span> to <span class="txt-black"> 14 days</span> to get a full refund.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //===========================Services-End=================================// -->
+        </div>
+    </section>
+    <!-- //===========================Votre-Start=================================// -->
+    <section id="votre">
+        <div class="bg-images">
+            <img class="left-1 bg-display" src="images/votre/left-1.png" alt="missing">
+
+            <img class="left-2 bg-display " src="images/votre/left-2.png" alt="missing">
+
+            <img class="right-2 bg-display " src="images/votre/right-2.png" alt="missing">
+        </div>
+        <div class="container">
+            <div class="page-intro">
+                <h4 class="headline">VOTRE CHAMBRE<span class="txt-dark-gold"> DE R&Ecirc;VE</span></h4>
+                <h3 class="headline-1">Une large gamme de chambres pour tous</h3>
+            </div>
+
+            <div class="votre-chambre">
+                <div class="card">
+                    <img src="images/votre/votre-1.png" class="card-img-top" alt="missing">
+                    <div class="card-body">
+                        <div class="card-info">
+                            <img class="card-info-img" src="images/votre/bed    wifi    car                .png" alt="missing">
+                        </div>
+                        <h5 class="card-title">Chambre 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p class="card-text1">300€/Nuit <span class="card-span">Réservez facile</span> </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/votre/votre-2.png" class="card-img-top" alt="missing">
+                    <div class="card-body">
+
+                        <img class="card-info-img" src="images/votre/bed    wifi    car                .png" alt="missing">
+
+                        <h5 class="card-title">Chambre 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p class="card-text1">300€/Nuit <span class="card-span">Réservez facile</span> </p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="images/votre/votre-3.png" class="card-img-top" alt="missing">
+                    <div class="card-body">
+
+                        <img class="card-info-img" src="images/votre/bed    wifi    car                .png" alt="missing">
+
+                        <h5 class="card-title">Chambre 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p class="card-text1">300€/Nuit <span class="card-span">Réservez facile</span> </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/votre/votre-4.png" class="card-img-top" alt="missing">
+                    <div class="card-body">
+
+                        <img class="card-info-img" src="images/votre/bed    wifi    car                .png" alt="missing">
+
+                        <h5 class="card-title">Chambre 4</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                        <p class="card-text1">300€/Nuit <span class="card-span">Réservez facile</span> </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- //===========================Votre-End=================================// -->
+        </div>
+    </section>
+    <!-- //===================footer Start============================// -->
+    <footer id="footer">
+        <div class="f-bg">
+            <div class="f-icon">
+                <img class="f-img" src="images/flogo.png" alt="missing">
+            </div>
+            <div class="footer-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="fbox-info">
+                                <div class="f-content f-address">
+                                    <h3 class="f-h3 f-ca">Adresse</h3>
+                                    <p class="f-p add-p">Quartier du Mourillon 17, Littoral Frédéric Mistral 83000 Toulon, France</p>
+
+                                </div>
+
+                                <div class="f-content f-contact">
+                                    <h3 class="f-h3">Contact</h3>
+                                    <div class="para-bind">
+                                        <p class="f-p f-cp">Réception: 04.94.91.92.96</p>
+                                        <p class="f-p f-cp1">Direction: 04.94.94.92.83</p>
+                                        <p class="f-p f-cp2">Commercial: 04.94.94.92.93</p>
+                                    </div>
+                                </div>
+
+                                <div class="f-content f-info">
+                                    <div class="f-shape">
+                                        <i class="f-ishape fa fa-info" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="f-bind">
+                                        <p class="f-p f-pinfo">Pour tout renseignement, nous sommes disponible par mail ou par le biais de notre formulaire</p>
+
+                                        <div class="f-bar f-bbar">
+                                            <h3 class="f-p f-bold">CONTACT</h3>
+                                            <div class="f-bimage">
+                                                <img class="f-bimg" src="images/right-arrow.png" alt="missing">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="f-content f-nos">
+                                    <h3 class="f-h3 nos-h3">Nos Réseaux</h3>
+                                    <div class=" f-social">
+                                        <img class="f-simage" src="images/social.png" alt="missing">
+                                    </div>
+
+                                </div>
+
+                                <div class="f-content f-bbc ">
+                                    <h3 class="f-h3 f-news">Newsletter</h3>
+                                    <div class="f-bind">
+                                        <p class="f-p news-p1">Restez à jour de nos actualités & offres !</p>
+                                        <div class="f-p f-bar news-box">
+                                            <h3 class="f-p news-p">Votre adresse email</h3>
+                                            <div class="news-image">
+                                                <img class="news-img" src="images/sm-arrow.png" alt="missing">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="fbox1-info">
+                                <div class="f-text">
+                                    <p class="f-txt">Nous Situer</p>
+                                </div>
+                                <div class="f-image">
+                                    <img class="footer-img" src="images/Gmap.png" alt="missing">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy-bar">
+            <div class="copy-layer">
+                <div class="copy-para">
+                    <p class="copy-p">Copyright 2021 // Groupe HTBM // BlaBlaBla</p>
+                </div>
+                <div class="copy-shape">
+                    <img class="copy-img" src="images/copy-logo.png" alt="missing">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- //===========================footer End=============================// -->
+    </footer>
+    <!--Add JS links if you want default styling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Add SWIPER-JS link if you want default styling -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-gallery1", {
+            spaceBetween: 3,
+            slidesPerView: 6,
+            freeMode: true,
+            loop: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".swiper-gallery", {
+            spaceBetween: 3,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+</body>
+
+
+</html>
